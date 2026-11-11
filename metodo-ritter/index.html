@@ -37,7 +37,8 @@ b{font-weight:700}
 
 /* cover */
 .cover h1{font-size:128px;font-weight:700;line-height:1.02;color:#F7F5F0}
-.ch{display:inline-block;white-space:pre}
+.wd{display:inline-block;white-space:nowrap}
+.ch{display:inline-block}
 .cover .sub{font-size:44px;line-height:1.3;color:#BFC8D8;max-width:1150px}
 .cover .deco{position:absolute;right:60px;bottom:110px;width:720px;opacity:.9}
 .cover .deco svg{width:720px;height:auto}
@@ -119,6 +120,53 @@ table.t{width:1664px;border-collapse:collapse;font-size:28px}
 body.idle #nav{opacity:.0}
 #idea .fig{width:920px;height:auto}
 .pts .badge{color:#F7F5F0}
+
+/* ---------- portrait / mobile ---------- */
+.mhint{display:none}
+html.portrait,html.portrait body{height:auto;overflow-x:hidden;overflow-y:auto;background:#F7F5F0}
+.portrait #stage{position:relative;left:0;top:0;width:1080px;height:auto;transform:none!important;box-shadow:none;overflow:visible;background:transparent}
+.portrait .slide{position:relative;inset:auto;min-height:max(1920px,var(--minh,1920px));padding:110px 64px 300px;gap:48px}
+.portrait .kicker{font-size:30px}
+.portrait .title{font-size:74px}
+.portrait .foot{left:64px;right:64px;bottom:190px;font-size:28px}
+.portrait .split{flex-direction:column;gap:44px;align-items:stretch}
+.portrait .split>div,.portrait .rows,.portrait .pts,.portrait .eqs{width:100%!important}
+.portrait .fig,.portrait #idea .fig{width:100%!important;height:auto!important}
+.portrait .fig text[font-size="22"],.portrait .fig text[font-size="24"],.portrait .fig text[font-size="26"]{font-size:32px}
+.portrait .row{padding:20px 8px}
+.portrait .row .lab{font-size:30px}
+.portrait .row .val{font-size:42px;line-height:1.35}
+.portrait .pts p{font-size:44px}
+.portrait .badge{font-size:38px}
+.portrait .cards{flex-direction:column;gap:36px}
+.portrait .card{padding:40px 44px}
+.portrait .card .tag{font-size:28px}
+.portrait .card h3{font-size:46px}
+.portrait .card p{font-size:38px}
+.portrait .card svg{height:340px}
+.portrait .st{gap:32px;padding:22px 8px}
+.portrait .st .n{width:76px;height:76px;font-size:36px}
+.portrait .st p{font-size:42px}
+.portrait .pm .sg{font-size:80px}
+.portrait .big{font-size:40px}
+.portrait table.t{width:100%;font-size:34px!important}
+.portrait .t th,.portrait .t td{padding:20px 16px}
+.portrait .t th[style]{width:auto!important}
+.portrait .t td.r{width:auto}
+.portrait .t .qbtn{font-size:30px}
+.portrait .eqc{padding:30px 36px}
+.portrait .eqc .q{font-size:36px}
+.portrait .eqc .e{font-size:44px}
+.portrait .cover h1{font-size:132px}
+.portrait .cover .sub{font-size:56px}
+.portrait .cover .deco{position:static;width:100%}
+.portrait .cover .deco svg{width:100%}
+.portrait .dhint{display:none}
+.portrait .mhint{display:inline}
+.portrait .hint{font-size:36px}
+.portrait #problemas h1{font-size:120px!important}
+.portrait #problemas .sub{font-size:48px!important}
+.portrait #problemas .ask{font-size:42px!important}
 </style></head>
 <body><div id="prog"></div><div id="stage"><section id="cover" class="slide dark cover">
 <p class="kicker hide">ACADEMIA TEBA · PRÁCTICO · BLOQUE 05</p>
@@ -126,7 +174,7 @@ body.idle #nav{opacity:.0}
 <h1>Método de Ritter</h1>
 <p class="sub hide">o método de las secciones: calcular una barra concreta de una estructura articulada con un solo corte</p>
 <div style="flex:1"></div>
-<p class="hint hide">Para avanzar: <span class="key">→</span> <span class="key">espacio</span> o clic · <span class="key">←</span> para volver · <span class="key">F</span> pantalla completa</p>
+<p class="hint hide"><span class="dhint">Para avanzar: <span class="key">→</span> <span class="key">espacio</span> o clic · <span class="key">←</span> para volver · <span class="key">F</span> pantalla completa</span><span class="mhint">Toca la diapositiva para avanzar · ◀ ▶ abajo</span></p>
 <div class="deco"><svg class="fig" viewBox="0 0 1100 420" width="1100" height="420" role="img" aria-label="Celosía decorativa" style=""><line class="bar " data-k="" x1="60.0" y1="360.0" x2="256.0" y2="360.0" stroke="#3A4A6B" stroke-width="4" stroke-linecap="round"/><line class="bar " data-k="" x1="60.0" y1="120.0" x2="256.0" y2="120.0" stroke="#3A4A6B" stroke-width="4" stroke-linecap="round"/><line class="bar " data-k="" x1="60.0" y1="120.0" x2="256.0" y2="360.0" stroke="#3A4A6B" stroke-width="4" stroke-linecap="round"/><line class="bar " data-k="" x1="256.0" y1="360.0" x2="452.0" y2="360.0" stroke="#3A4A6B" stroke-width="4" stroke-linecap="round"/><line class="bar " data-k="" x1="256.0" y1="120.0" x2="452.0" y2="120.0" stroke="#3A4A6B" stroke-width="4" stroke-linecap="round"/><line class="bar " data-k="" x1="256.0" y1="120.0" x2="452.0" y2="360.0" stroke="#3A4A6B" stroke-width="4" stroke-linecap="round"/><line class="bar " data-k="" x1="452.0" y1="360.0" x2="648.0" y2="360.0" stroke="#3A4A6B" stroke-width="4" stroke-linecap="round"/><line class="bar " data-k="" x1="452.0" y1="120.0" x2="648.0" y2="120.0" stroke="#3A4A6B" stroke-width="4" stroke-linecap="round"/><line class="bar " data-k="" x1="452.0" y1="360.0" x2="648.0" y2="120.0" stroke="#3A4A6B" stroke-width="4" stroke-linecap="round"/><line class="bar " data-k="" x1="648.0" y1="360.0" x2="844.0" y2="360.0" stroke="#3A4A6B" stroke-width="4" stroke-linecap="round"/><line class="bar " data-k="" x1="648.0" y1="120.0" x2="844.0" y2="120.0" stroke="#3A4A6B" stroke-width="4" stroke-linecap="round"/><line class="bar " data-k="" x1="648.0" y1="120.0" x2="844.0" y2="360.0" stroke="#3A4A6B" stroke-width="4" stroke-linecap="round"/><line class="bar " data-k="" x1="844.0" y1="360.0" x2="1040.0" y2="360.0" stroke="#3A4A6B" stroke-width="4" stroke-linecap="round"/><line class="bar " data-k="" x1="844.0" y1="120.0" x2="1040.0" y2="120.0" stroke="#3A4A6B" stroke-width="4" stroke-linecap="round"/><line class="bar " data-k="" x1="844.0" y1="120.0" x2="1040.0" y2="360.0" stroke="#3A4A6B" stroke-width="4" stroke-linecap="round"/><line class="bar " data-k="" x1="60.0" y1="120.0" x2="60.0" y2="360.0" stroke="#3A4A6B" stroke-width="4" stroke-linecap="round"/><line class="bar " data-k="" x1="256.0" y1="120.0" x2="256.0" y2="360.0" stroke="#3A4A6B" stroke-width="4" stroke-linecap="round"/><line class="bar " data-k="" x1="452.0" y1="120.0" x2="452.0" y2="360.0" stroke="#3A4A6B" stroke-width="4" stroke-linecap="round"/><line class="bar " data-k="" x1="648.0" y1="120.0" x2="648.0" y2="360.0" stroke="#3A4A6B" stroke-width="4" stroke-linecap="round"/><line class="bar " data-k="" x1="844.0" y1="120.0" x2="844.0" y2="360.0" stroke="#3A4A6B" stroke-width="4" stroke-linecap="round"/><line class="bar " data-k="" x1="1040.0" y1="120.0" x2="1040.0" y2="360.0" stroke="#3A4A6B" stroke-width="4" stroke-linecap="round"/><mask id="m1" maskUnits="userSpaceOnUse" x="-100" y="-100" width="1300" height="620"><polyline class="ink" data-k="cut" points="560.0,40.0 560.0,400.0" fill="none" stroke="#fff" stroke-width="19" stroke-linecap="round" stroke-linejoin="round"/></mask><polyline class="" points="560.0,40.0 560.0,400.0" fill="none" stroke="#F4A26B" stroke-width="5" stroke-dasharray="16 10" mask="url(#m1)"/></svg></div>
 <p class="foot hide">Teoría de estructuras (Teba) · Tema 44 · Problemas PR12 9–12</p></section><section id="cuando" class="slide "><div class="head"><p class="kicker">1 · CUÁNDO</p><h2 class="title">Nudos o Ritter: depende de lo que te pidan</h2></div>
 <table class="t">
@@ -297,7 +345,7 @@ body.idle #nav{opacity:.0}
   const stage = document.getElementById('stage');
   const slides = [...document.querySelectorAll('.slide')];
   const orig = slides.map(s => s.innerHTML);
-  let cur = 0, step = 0, timers = [], loops = [];
+  let cur = 0, step = 0, timers = [], loops = [], inStep = false;
 
   const els = (sl, sel) => sel ? [...sl.querySelectorAll(sel)] : [];
   const drw = e => (e._dr || (e._dr = A.svg.createDrawable(e)[0]));
@@ -315,7 +363,13 @@ body.idle #nav{opacity:.0}
       [...n.childNodes].forEach(c => {
         if (c.nodeType === 3) {
           const f = document.createDocumentFragment();
-          [...c.textContent].forEach(ch => { const s = document.createElement('span'); s.className = 'ch'; s.textContent = ch; f.appendChild(s); });
+          c.textContent.split(/(\s+)/).forEach(w => {
+            if (!w) return;
+            if (/^\s+$/.test(w)) { f.appendChild(document.createTextNode(' ')); return; }
+            const wd = document.createElement('span'); wd.className = 'wd';
+            [...w].forEach(ch => { const s = document.createElement('span'); s.className = 'ch'; s.textContent = ch; wd.appendChild(s); });
+            f.appendChild(wd);
+          });
           c.replaceWith(f);
         } else if (c.nodeType === 1 && c.tagName !== 'BR') walk(c);
       });
@@ -341,6 +395,7 @@ body.idle #nav{opacity:.0}
         if (a.pop) kf = { opacity: [0, 1], scale: [.6, 1.08, 1] };
         if (a.grow || a.pop) E.forEach(e => { e.style.transformBox = 'fill-box'; e.style.transformOrigin = 'center'; });
         M.animate(E, kf, { duration: fast ? 0 : (a.dur || .55), delay: stag, ease: EASE });
+        if (portrait && inStep && !fast && a.d === undefined) { const last = E[E.length - 1]; if (!(last instanceof SVGElement)) setTimeout(() => last.scrollIntoView({ behavior: 'smooth', block: 'nearest' }), 80); }
         if (a.row && !fast) M.animate(E, { backgroundColor: ['#FDE7D8', 'rgba(253,231,216,0)'] }, { duration: 1.8, ease: 'easeOut' });
       } else if (a.hide) {
         M.animate(E, { opacity: 0 }, { duration: fast ? 0 : .3 });
@@ -421,7 +476,10 @@ body.idle #nav{opacity:.0}
     cur = i;
     const sl = slides[i];
     build(i, upto, animateEnter);
-    if (old !== sl) {
+    if (old !== sl && portrait) {
+      old.classList.remove('on'); sl.classList.add('on'); window.scrollTo(0, 0);
+      M.animate(sl, { opacity: [0, 1] }, { duration: reduce ? 0 : .3 });
+    } else if (old !== sl) {
       sl.style.zIndex = 2; sl.classList.add('on'); old.style.zIndex = 1;
       M.animate(sl, { opacity: [0, 1] }, { duration: reduce ? 0 : .35 }).then(() => { old.classList.remove('on'); old.style.zIndex = ''; sl.style.zIndex = ''; });
     } else sl.classList.add('on');
@@ -430,7 +488,7 @@ body.idle #nav{opacity:.0}
 
   function next() {
     const cfg = CFG[slides[cur].id] || {}, S = cfg.steps || [];
-    if (step < S.length) { S[step].forEach(a => act(slides[cur], a, reduce)); step++; ui(); }
+    if (step < S.length) { inStep = true; S[step].forEach(a => act(slides[cur], a, reduce)); inStep = false; step++; ui(); }
     else if (cur < slides.length - 1) show(cur + 1, 0, true);
   }
   function prev() {
@@ -447,9 +505,12 @@ body.idle #nav{opacity:.0}
     try { history.replaceState(null, '', '#s' + (cur + 1)); } catch (e) { }
   }
 
+  let portrait = false;
   function fit() {
-    const s = Math.min(innerWidth / 1920, innerHeight / 1080);
-    stage.style.transform = 'translate(-50%,-50%) scale(' + s + ')';
+    portrait = innerWidth < innerHeight || innerWidth < 700;
+    document.documentElement.classList.toggle('portrait', portrait);
+    if (portrait) { const z = innerWidth / 1080; stage.style.transform = ''; stage.style.zoom = z; stage.style.setProperty('--minh', Math.ceil(innerHeight / z) + 'px'); }
+    else { stage.style.zoom = ''; const s = Math.min(innerWidth / 1920, innerHeight / 1080); stage.style.transform = 'translate(-50%,-50%) scale(' + s + ')'; }
   }
   addEventListener('resize', fit); fit();
 
